@@ -1,0 +1,187 @@
+:root {
+    --outfit: 'Outfit', sans-serif;
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --cyanOP: hsla(178, 100%, 50%, 0.4);
+    --white: hsl(0, 0%, 100%);
+    --darkBlueMain: hsl(217, 54%, 11%);
+    --darkBlueCard: hsl(216, 50%, 16%);
+    --darkBlueLine: hsl(215, 32%, 27%);
+    --grapeBlue: hsl(228, 45%, 44%);
+}
+
+body {
+    color: var(--softBlue);
+    background-color: var(--darkBlueMain);
+    font-family: var(--outfit);
+}
+
+main{
+    height: 95vh;
+}
+
+.center {
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--darkBlueCard);
+    width: 18em;
+    padding: 1.6em;
+    border-radius: 1em;
+}
+
+.nft-image {
+    width: 100%;
+    border-radius: 0.6em;
+}
+
+.image-container
+{
+  position: relative;
+}
+
+.active-state {
+    display: block;
+    position: absolute;
+    inset: 0; 
+    width: 18em;
+    height: 18em;
+    background-color: rgba(0, 255, 247, 0.5);
+    border-radius: 0.7em;
+}
+
+.active-state {
+    opacity: 0;
+}
+
+.image-container:hover .active-state
+{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.view-icon
+{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 5em;
+    height: 5em;
+    background-image: url(/images/icon-view.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0.6em;
+}
+
+h1:hover {
+    color: var(--cyan);
+    cursor: pointer;
+    transition: .3s ease-in;
+}
+
+.about-nft {
+    width: auto;
+    font-weight: 100;
+    line-height: 1.7;
+    text-align: start;
+    margin: 0 0 0.5em 0;
+
+}
+
+h2 {
+    display: inline-block;
+    font-size: 1rem;
+    margin-bottom: 1.3em;
+}
+
+.nft-info {
+    display: flex;
+    justify-content:space-between;
+}
+
+.eth-icon, .clock-icon {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: text-top;
+}
+
+.eth-icon {
+    background-image: url(/images/icon-ethereum.svg);
+}
+
+.clock-icon {
+    background-image: url(/images/icon-clock.svg);
+}
+
+.eth {
+    color: aqua;
+    font-weight: 500;
+}
+
+.days-left {
+    font-weight: 100;
+}
+
+.line {
+    border-bottom: 1px solid var(--darkBlueLine);
+}
+
+.nft-creator {
+    display: flex;
+    align-items: center;
+    height: 2em;
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+.avatar-picture {
+    width: 2em;
+    height: 2em;
+    border: 1.28px solid var(--white);
+    border-radius: 50%;
+}
+
+.creation {
+    font-weight: 200;
+    font-size: 1rem;
+    margin: 0 1em;
+}
+
+.author {
+    color: var(--white);
+    font-weight: 400;
+}
+
+.author:hover {
+    color: var(--cyan);
+    cursor: pointer;
+    transition: .3s ease-in;
+}
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a { 
+    color: var(--grapeBlue);
+    text-decoration: none;
+}
