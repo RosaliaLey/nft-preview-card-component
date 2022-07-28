@@ -75,7 +75,7 @@ main{
     transform: translate(-50%,-50%);
     width: 5em;
     height: 5em;
-    background-image: url(/images/icon-view.svg);
+    background-image: url(images/icon-view.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -125,11 +125,11 @@ h2 {
 }
 
 .eth-icon {
-    background-image: url(/images/icon-ethereum.svg);
+    background-image: url(images/icon-ethereum.svg);
 }
 
 .clock-icon {
-    background-image: url(/images/icon-clock.svg);
+    background-image: url(images/icon-clock.svg);
 }
 
 .eth {
